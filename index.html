@@ -1,0 +1,334 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinja Arts</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/179dd96052.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!----welcome---------------------------------------------------->
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./src/pics/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#about">Minusta</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Palvelut</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
+            <li><a href="./index_en.html">EN</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="row">
+          <div class="header-text">
+            <h1>Hei, mä oon <span>Pinja</span></h1>
+            <p>Taiteilija ja kasvi harrastaja Espoosta</p>
+          </div>
+          <div class="header-pic">
+            <img src="./src/pics/welcome.png" class="main.pic" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----about---------------------------------------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col1">
+            <img src="./src/pics/about.png" class="about-pic" />
+          </div>
+          <div class="col2">
+            <h1 class="sub-title">Minusta</h1>
+            <p>
+              Hi, my name is Pinja Turunen. Nice to make your acquaintance.
+              After the previous I usually like to start telling a little bit
+              about myself, my academic background and workhistory. However, for
+              now I would like to take the time to get to the most important
+              details which truly make me, well, me.<span id="dots">...</span><span id="more"> <br /><br />I get excited about
+              the discussions that truly make you reshape yourself and your
+              views. Not just in my work environment but in life itself. I don't
+              like to spend my time repeating something that most people could
+              figure out in minutes. We live in a global network after all and
+              details about a persons work history or academic achievements are
+              fastly available. <br /><br />So let's get down to business. What
+              are your deepest passions, fears and goals? What has shaped you as
+              a person? These are the discussions in which I feel the most
+              invested in. I tend to be as open as I can, I think that honesty
+              and openess between all parties is essential in every interaction
+              that we have on a day to day basis. <br /><br />If you haven't
+              guessed by now, I am deeply invested in people and that has
+              everything to do with my passion in psychology. My dream has been
+              to be a psychologist for a long time but before anything else all
+              I want to do is help people like I have been helped throughout my
+              life. <br /><br />I am also very passionate about making art and
+              being creative in my everyday life. I enjoy the small things that
+              make life worth living for. For example I love being surrounded by
+              nature and seeing all of the small wonders that usually get looked
+              past on. <br /><br />After all this you must be wondering, what
+              are my deepest fears since I have already told you my deepest
+              passions. To put it simply, I fear to live an unfulfilling life.
+              By this I mean a life in which I can't be true to myself and
+              others. I want to be as understanding as possible, not just to
+              everyone else but to myself as well. I have and continue to try to
+              live by the words of the late painter Bob Ross: <br /><br />"There
+              are no mistakes, just happy little accidents." <br /><br />I like
+              so many more have faced challenges that could have been caused by
+              various reasons, sometimes our greatest challenge is even us
+              ourselves. However I try to look past this and make the best out
+              of the situation with the tools I have. I look forward to
+              challenging myself and others and I am deeply appreciative for
+              everyone who is open to that as well. <br /><br />Thank you for
+              getting to know me, you're welcome to return the favour simply by
+              saying hi and we'll see how it goes from there.
+              <i class="fa-regular fa-face-smile-wink"></i></span>
+              <button onclick="myFunction()" id="myBtn">Read more</button>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Koulutus
+              </p>
+              <p class="tab-links" onclick="opentab('experiance')">
+                Työkokemus
+              </p>
+            </div>
+            <div class="tab-content active-tab" id="education">
+              <ul>
+                <li>
+                  <span>Helsgin Yliopisto </span>2021 -> <br />Kasvatustieteet
+                </li>
+                <li><span>Kaitaan lukio</span> 2017 - 2020</li>
+              </ul>
+            </div>
+            <div class="tab-content" id="experiance">
+              <ul>
+                <li><span>Jysk</span> Joku 201?-> <br />Palloilu</li>
+                <li>
+                  <span>Grilli</span> Työntekijä? 201? - 201? <br />Vastasin
+                  Setämiesten hyvinvoinnista
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!---------Portfolio------------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./src/pics/Työ (kissa).png"/>
+            <div class="layer">
+              <h3>Piirros kissasta</h3>
+              <p>Kankaalle piiretty kissa</p>
+              <a href="https://www.instagram.com/p/Cs4GBTeNbDc/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./src/pics/työ (picnic).png"/>
+            <div class="layer">
+              <h3>Piirros picnicistä tabletilla</h3>
+              <p>Tabletilla piiretty picnic</p>
+              <a href="https://www.instagram.com/p/Cse58NlsSAH/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./src/pics/kasvit.png"/>
+            <div class="layer">
+              <h3>Kasvi</h3>
+              <p>Osa minun kasvi kokoelmasta</p>
+              <a href="https://www.instagram.com/p/CsYzXepNbMk/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/p1mjamin/" class="button">Katso lisää</a>
+      </div>
+    </div>
+
+    <!--Services--------------------------------------------------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Palvelut</h1>
+        <div class="services-list">
+          <div>
+              <i class="fa-brands fa-pagelines"></i>
+              <h2>Kasvit</h2>
+              <p>Myyn itse kasvatettuja kasveja</p>
+              <ul id="prices">
+                <li>- Pieni kasvi 3€</li>
+                <li>- Normi kasvi 5€</li>
+                <li>- Iso kasvi 7€</li>
+              </ul>
+              <button onclick="prices()" id="myBtn2">Näytä hinnat</button>
+              <h3>Tilauksia varten ottakaa yhteyttä alla olevan lomakkeen avula</h3>
+          </div>
+          <div>
+            <i class="fa-solid fa-paintbrush"></i>
+            <h2>Maalaminen</h2>
+            <p>Maalaan yksilöytyjä taide kappaleita</p>
+            <ul id="prices2">
+              <li>- Pieni kuva 10€</li>
+              <li>- Normi kuva 20€</li>
+              <li>- Iso kuva 30€</li>
+            </ul>
+            <button onclick="prices2()" id="myBtn2">Näytä hinnat</button>
+            <h3>Tilauksia varten ottakaa yhteyttä alla olevan lomakkeen avulla</h3>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!--Contact------------------------------------>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Ota yhteyttä</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> pinja@test.fi</p>
+            <p><i class="fa-solid fa-square-phone"></i>+358 45 42069</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/pinja-turunen-3a489a230/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://fi.pinterest.com/pinjaturunen/"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="https://www.instagram.com/p1mjamin/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="" class="button btn2">Lataa CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Nimenne" required />
+              <input type="email" name="Email" placeholder="Sähköpostinne" required/>
+              <textarea name="Message" rows="6" placeholder="Viestinne"></textarea>
+              <button type="submit" class="button btn2">Lähetä</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="copyright-text">
+        <p>Made by Mikhail Romanov <i class="fa-solid fa-heart"></i></p>
+      </div>
+      <div class="social-icons2">
+        <a href="https://www.linkedin.com/in/mikhail-romanov-116340256/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/mkhlrmnv"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/mkhlrmnv/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontent = document.getElementsByClassName("tab-content");
+
+      function opentab(tab_name) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcont of tabcontent) {
+          tabcont.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab_name).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var side_menu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        side_menu.style.right = "0";
+      }
+
+      function closemenu(){
+        side_menu.style.right = "-200";
+      }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyJv_SyN_da9TIMI8hboWW1YRvVJwZkKffoj2mhqkHuHw6WQvccXVydwSIjzSqqq8n-/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Viesti on lähetetty"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+
+    <script>
+      function prices(){
+        var prices = document.getElementById("prices");
+        var btnText = document.getElementById("myBtn2");
+
+        if (prices.style.display === "inline"){
+          prices.style.display = "none";
+          btnText.innerHTML = "Näytä hinnat";
+        }
+        else{
+          prices.style.display = "inline";
+          btnText.innerHTML = "Piilota hinnat";
+        }
+      }
+    </script>
+
+    <script>
+      function prices2(){
+        var prices = document.getElementById("prices2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (prices.style.display === "inline"){
+          prices.style.display = "none";
+          btnText.innerHTML = "Näytä hinnat";
+        }
+        else{
+          prices.style.display = "inline";
+          btnText.innerHTML = "Piilota hinnat";
+        }
+      }
+    </script>
+  </body>
+</html>
